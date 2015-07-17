@@ -1,4 +1,4 @@
 class Category < ActiveRecord::Base
-	attr_accessible :name
+	attr_accessor :name
 	has_many :posts
 end

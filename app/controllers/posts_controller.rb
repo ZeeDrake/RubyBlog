@@ -3,14 +3,15 @@ class PostsController < ApplicationController
   end
 
   def index
-    @content_first = 'This is some sample text for our awesome Ruby blog';
-    @content_second = 'This is some sample text for our awesome Ruby blog';
+    @posts = Post.all
+    @categories = Category.all
   end
 
   def new
   end
 
   def show
+    @post = Post.find(params[:id])
   end
 
   def destory
