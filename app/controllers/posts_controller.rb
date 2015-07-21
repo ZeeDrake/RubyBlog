@@ -3,11 +3,12 @@ class PostsController < ApplicationController
   end
 
   def index
-    @posts = Post.all
-    @categories = Category.all
+
+    # @categories = Category.all
   end
 
   def new
+    posts = Post.all
   end
 
   def show
